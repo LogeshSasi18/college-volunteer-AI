@@ -1,0 +1,127 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px; /* Reduced size for a sleek look */
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Royal Blue Gradient */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Box Container for Navbar Content */
+.navbar-box {
+  display: flex;
+  padding: 1px 10px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent box */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+/* Logo */
+.logo {
+  font-size: 18px; /* Reduced size for compact design */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 15px; /* Proper spacing between items */
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* Premium Add Event Button */
+.add-event-btn {
+  background: linear-gradient(135deg, #ff5f6d, #ffc371); /* Red to Gold */
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(255, 95, 109, 0.4);
+}
+
+.add-event-btn:hover {
+  background: linear-gradient(135deg, #ff416c, #ffbb64);
+  transform: scale(1.08);
+  box-shadow: 0 3px 6px rgba(255, 95, 109, 0.6);
+}
+
+/* Logout Button */
+.logout-btn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple to Blue */
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.logout-btn:hover {
+  background: linear-gradient(135deg, #5a0fc8, #1b6aff);
+  transform: scale(1.08);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-box {
+      width: 95%;
+      padding: 10px;
+  }
+
+  .nav-links {
+      gap: 10px;
+  }
+
+  .nav-item {
+      font-size: 12px;
+      padding: 6px 10px;
+  }
+
+  .add-event-btn, .logout-btn {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}

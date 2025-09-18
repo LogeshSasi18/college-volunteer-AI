@@ -1,0 +1,154 @@
+/* Container */
+.manage-events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  background: rgb(0 109 225 / 11%);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title */
+.manage-events-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Event List */
+.manage-events-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+/* Event Card */
+.manage-events-item {
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeUp 0.5s ease-in-out;
+}
+
+.manage-events-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Event Info */
+.manage-events-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.manage-events-item p {
+  font-size: 15px;
+  color: #444;
+  margin: 5px 0;
+}
+
+/* Buttons */
+.manage-events-button {
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.manage-events-button:hover {
+  background: linear-gradient(45deg, #4a00e0, #8e2de2);
+  transform: scale(1.05);
+}
+
+.manage-events-button.delete {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+.manage-events-button.delete:hover {
+  background: linear-gradient(45deg, #e52d27, #b31217);
+}
+
+/* Form Styling */
+.manage-events-form {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.manage-events-input,
+.manage-events-textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(0, 0, 0, 0.05);
+  color: #333;
+}
+
+.manage-events-input:focus,
+.manage-events-textarea:focus {
+  outline: none;
+  border: 2px solid #6a11cb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .manage-events-container {
+    padding: 30px 15px;
+  }
+  .manage-events-title {
+    font-size: 24px;
+  }
+  .manage-events-button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
